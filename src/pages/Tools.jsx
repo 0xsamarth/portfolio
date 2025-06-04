@@ -7,33 +7,33 @@ import { motion } from "framer-motion";
 import { FileText } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-export default function Resources() {
+export default function Tools() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const resources = [
     {
-      title: "📝 Notes",
+      title: "🧼 JS Beautifier",
       date: "10-05-2025",
-      link: "/resources/notes",
+      link: "/tools/beautifier",
     },
     {
-      title: "📄 Cheatsheets",
+      title: "📄 Git Finder",
       date: "09-05-2025",
-      link: "/resources/cheatsheets",
+      link: "/tools/git",
     },
     {
-      title: "💥 Payloads",
+      title: "💥 Subdomain Enumeration",
       date: "08-05-2025",
-      link: "/resources/payloads",
+      link: "/tools",
     },
   ];
 
   return (
     <div className="bg-white dark:bg-black text-gray-900 dark:text-gray-100 font-mono min-h-screen transition-colors duration-500">
       <Helmet>
-        <title>Resources</title>
+        <title>Tools</title>
         <meta name="description" content="Explore free web security resources, notes, payloads, and cheatsheets created by Samarth Aher." />
       </Helmet>
 
@@ -79,7 +79,7 @@ export default function Resources() {
               </div>
               <Link
                 to={resource.link}
-                className="mt-2 block text-gray-800 dark:text-gray-300  text-xl font-semibold"
+                className="mt-2 block text-gray-800 dark:text-gray-300 text-xl font-semibold"
               >
                 {resource.title}
               </Link>

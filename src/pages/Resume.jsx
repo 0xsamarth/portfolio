@@ -2,34 +2,30 @@ import React, { useEffect } from 'react';
 
 const Resume = () => {
   useEffect(() => {
-    // Load Feather icons after component mounts
     const script = document.createElement('script');
     script.src = 'https://unpkg.com/feather-icons';
     script.onload = () => {
-      if (window.feather) {
-        window.feather.replace();
-      }
+      if (window.feather) window.feather.replace();
     };
     document.body.appendChild(script);
   }, []);
 
   return (
-    <div className="bg-gray-100 text-black min-h-screen py-10 px-6">
+    <div className="bg-white dark:bg-black text-gray-900 dark:text-gray-100 font-mono min-h-screen py-10 px-6 transition-colors duration-500">
       <div className="max-w-4xl mx-auto">
         <header className="text-center mb-10 relative">
-          <h1 className="text-4xl font-bold text-black">Samarth Aher</h1>
-          <p className="text-lg text-gray-700">
-            Security Researcher | Penetration Tester |{' '}
-            <span className="text-red-600">Red Teamer</span>
+          <h1 className="text-4xl font-bold">Samarth Aher</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300">
+            Security Researcher | Penetration Tester | <span className="text-red-600">Red Teamer</span>
           </p>
-          <div className="flex justify-center items-center flex-wrap gap-4 mt-2 text-sm text-gray-700">
-            <a href="tel:+917755945515" className="flex items-center gap-1 text-gray-700 hover:underline">
+          <div className="flex justify-center items-center flex-wrap gap-4 mt-2 text-sm text-gray-700 dark:text-gray-300">
+            <a href="tel:+917755945515" className="flex items-center gap-1 hover:underline">
               <i data-feather="phone" className="w-4 h-4" /> +91 7755945515
             </a>
-            <a href="mailto:0xsamarth@gmail.com" className="flex items-center gap-1 text-gray-700 hover:underline">
+            <a href="mailto:0xsamarth@gmail.com" className="flex items-center gap-1 hover:underline">
               <i data-feather="mail" className="w-4 h-4" /> 0xsamarth@gmail.com
             </a>
-            <a href="https://samarthaher.github.io/blogs/" className="flex items-center gap-1 text-gray-700 hover:underline">
+            <a href="https://samarthaher.github.io/blogs/" className="flex items-center gap-1 hover:underline">
               <i data-feather="globe" className="w-4 h-4" /> samarthaher.github.io/blogs
             </a>
           </div>
@@ -41,64 +37,60 @@ const Resume = () => {
         </header>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Professional Summary</h2>
-          <p className="mt-3 leading-relaxed text-gray-800">
-            Security Researcher with hands-on experience in discovering and reporting vulnerabilities across web
-            applications, APIs, and networks. Skilled in penetration testing, scripting, and red teaming with a strong
-            foundation in OWASP Top 10. Adept at using advanced security tools and methodologies for offensive security
-            testing.
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Professional Summary</h2>
+          <p className="mt-3 leading-relaxed">
+            Cybersecurity specialist with proven experience identifying critical vulnerabilities in modern applications and networks. Passionate about offensive security, red teaming, and secure software design. Adept at collaborating with developers and infrastructure teams to mitigate risks and strengthen cyber resilience.
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Work Experience</h2>
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Work Experience</h2>
           <div className="mt-3">
-            <p className="font-semibold text-gray-900">Freelance Security Researcher / Penetration Tester</p>
-            <p className="text-sm text-gray-600">Remote | 2022 – Present</p>
-            <ul className="list-disc list-inside mt-2 text-gray-800 text-sm">
-              <li>Performed manual and automated testing across live environments.</li>
-              <li>Reported security issues through bug bounty platforms such as HackerOne and Bugcrowd.</li>
-              <li>Generated professional security reports with remediation recommendations.</li>
+            <p className="font-semibold">Freelance Security Researcher / Penetration Tester</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Remote | 2022 – Present</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              <li>Conducted black-box and gray-box testing for over 50 web applications.</li>
+              <li>Reported 100+ validated vulnerabilities on platforms like HackerOne, Bugcrowd, and private programs.</li>
+              <li>Worked with engineering teams to verify patches and hardening improvements.</li>
+              <li>Produced actionable documentation and risk analysis for stakeholders.</li>
             </ul>
           </div>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Skills</h2>
-          <ul className="mt-3 text-sm text-gray-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <li><strong>OWASP Top 10:</strong> Practical knowledge of exploiting and mitigating XSS, SQLi, CSRF, and IDOR.</li>
-            <li><strong>Scripting:</strong> Automating tasks with Bash, Python, and PowerShell in both Linux and Windows.</li>
-            <li><strong>Manual Testing:</strong> Proficient in Burp Suite Pro and OWASP ZAP for deep web/API testing.</li>
-            <li><strong>Automated Scanning:</strong> Scanning infrastructure vulnerabilities with Nessus and similar tools.</li>
-            <li><strong>OS Environments:</strong> Kali Linux and Windows Server used for testing and simulations.</li>
-            <li><strong>Red Teaming:</strong> Leveraging Cobalt Strike for exploitation, persistence, and reporting.</li>
-            <li><strong>Frameworks:</strong> Applying MITRE ATT&CK and CVSS for structured threat modeling and scoring.</li>
-            <li><strong>SIEM Tool:</strong> Leveraging Splunk for Real-Time Threat Detection, Log Correlation, and Incident Response Automation.</li>
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Skills</h2>
+          <ul className="mt-3 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li><strong>OWASP Top 10:</strong> Exploiting and mitigating common web vulnerabilities.</li>
+            <li><strong>Scripting:</strong> Python, Bash, and PowerShell automation experience.</li>
+            <li><strong>Tools:</strong> Burp Suite Pro, OWASP ZAP, Nessus, Nmap, Wireshark.</li>
+            <li><strong>Infrastructure:</strong> AWS Security, Linux hardening, Windows AD enumeration.</li>
+            <li><strong>Red Teaming:</strong> Proficient in Cobalt Strike, custom payload delivery, and OPSEC.</li>
+            <li><strong>Frameworks:</strong> MITRE ATT&CK, NIST, CVSS scoring.</li>
+            <li><strong>SIEM:</strong> Experienced with Splunk and ELK Stack for threat hunting and alerting.</li>
+            <li><strong>Collaboration:</strong> Git, JIRA, Slack, Confluence, agile-ready workflows.</li>
           </ul>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Education</h2>
-          <ul className="mt-3 text-sm text-gray-800 space-y-3">
-            <li>
-              <strong>Bachelor of Engineering in Information Technology</strong><br />
-              Savitribai Phule Pune University, 2023 – CGPA: 8.04
-            </li>
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Education</h2>
+          <p className="mt-3 text-sm">
+            <strong>B.E. in Information Technology</strong><br />
+            Savitribai Phule Pune University, 2023 — CGPA: 8.04
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Projects</h2>
+          <ul className="mt-3 text-sm space-y-4">
+            <li><strong>SIEM Alert Engineering:</strong> Developed custom correlation rules in Splunk for privilege escalation detection.</li>
+            <li><strong>Web & API Security Lab:</strong> Created a lab to simulate XSS, CSRF, IDOR, JWT issues for training purposes.</li>
+            <li><strong>CTF Platform Deployment:</strong> Built a capture-the-flag platform with Docker and custom challenge sets.</li>
           </ul>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Projects</h2>
-          <ul className="mt-3 text-sm text-gray-800 space-y-4">
-            <li><strong>SIEM Monitoring & Alerting</strong><br />Built and tuned alerts in Splunk for real-time threat detection.</li>
-            <li><strong>Web Application Penetration Testing</strong><br />Performed end-to-end OWASP Top 10 testing on real-world apps.</li>
-            <li><strong>API Penetration Testing</strong><br />Tested insecure APIs for authentication bypass, IDOR, SSRF, and mass assignment.</li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Languages</h2>
-          <ul className="mt-3 text-sm text-gray-800 list-disc list-inside">
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Languages</h2>
+          <ul className="mt-3 text-sm list-disc list-inside">
             <li>English – Full Professional Proficiency</li>
             <li>Hindi – Native Speaker</li>
             <li>Marathi – Native Speaker</li>
@@ -107,19 +99,21 @@ const Resume = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Certifications</h2>
-          <ul className="mt-3 text-sm text-gray-800 list-disc list-inside">
-            <li>CEH (In progress)</li>
-            <li>OSCP (In progress)</li>
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Certifications</h2>
+          <ul className="mt-3 text-sm list-disc list-inside">
+            <li>Certified Ethical Hacker (CEH) – In Progress</li>
+            <li>Offensive Security Certified Professional (OSCP) – In Progress</li>
+            <li>eLearnSecurity Junior Penetration Tester (eJPT)</li>
+            <li>Google Cybersecurity Certificate</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-black border-b pb-1 border-gray-400">Additional Information</h2>
-          <ul className="mt-3 text-sm text-gray-800 list-disc list-inside">
-            <li>Technical Blogger focused on cybersecurity</li>
-            <li>Available for immediate joining</li>
-            <li>Open to relocation or remote opportunities</li>
+          <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Additional Information</h2>
+          <ul className="mt-3 text-sm list-disc list-inside">
+            <li>Active technical blogger in cybersecurity and InfoSec awareness.</li>
+            <li>Open to internships, freelance, and full-time security roles globally.</li>
+            <li>Available immediately | Willing to relocate or work remotely.</li>
           </ul>
         </section>
       </div>

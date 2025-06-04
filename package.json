@@ -1,4 +1,5 @@
 {
+  "homepage": "https://0xsamarth.github.io/portfolio",
   "name": "personal-website",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
@@ -18,14 +21,20 @@
     "framer-motion": "^12.10.5",
     "lucide-react": "^0.509.0",
     "nodemailer": "^7.0.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "prettier": "^3.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.6.0"
+    "react-parallax-tilt": "^1.7.296",
+    "react-router-dom": "^7.6.0",
+    "react-simple-typewriter": "^5.0.1",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@rollup/plugin-alias": "^5.1.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
@@ -33,6 +42,7 @@
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
