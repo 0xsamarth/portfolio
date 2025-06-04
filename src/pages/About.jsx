@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div className="bg-white dark:bg-black text-gray-900 dark:text-gray-100 font-mono min-h-screen transition-colors duration-500">
       <Helmet>
-        <title>About Samarth Aher</title>
+        <title>About</title>
         <meta name="description" content="Learn more about Samarth Aher, a passionate web security researcher and ethical hacker recognized by companies like Google and Pinterest." />
       </Helmet>
       <Header toggleMenu={toggleMenu} />
