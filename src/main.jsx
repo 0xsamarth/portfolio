@@ -4,14 +4,14 @@ import App from './App';
 import './index.css';
 import { HelmetProvider } from 'react-helmet-async';
 import { DarkModeProvider } from './contexts/DarkModeContext';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HelmetProvider>
     <DarkModeProvider>
-      <BrowserRouter basename="/portfolio">
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </DarkModeProvider>
   </HelmetProvider>
 );
