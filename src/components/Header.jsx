@@ -42,7 +42,7 @@ export default function Header() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              src="/Images/logo.JPG"
+              src="./Images/logo.JPG"
               alt="Logo"
               className="w-10 h-10 rounded-full border border-gray-400 shadow-sm"
             />
