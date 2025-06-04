@@ -92,7 +92,7 @@ export default function Services() {
   return (
     <div className="bg-white dark:bg-black text-gray-900 dark:text-gray-100 font-mono min-h-screen transition-colors duration-500">
       <Helmet>
-        <title>Services | Samarth Aher</title>
+        <title>Services</title>
         <meta
           name="description"
           content="Offering professional cybersecurity services including web audits, penetration testing, and personalized mentorship."
