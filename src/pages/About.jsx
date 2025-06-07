@@ -139,10 +139,9 @@ export default function About() {
           className="mt-6 space-y-3 text-gray-800 dark:text-gray-300 max-w-prose"
         >
           {[
-            'Certified Ethical Hacker (CEH)',
-            'Offesive Security Certified Professional (OSCP)',
-            'Certified Red Team Professional (CRTP)',
-            'CISSP'
+            'Cybrary: Introduction to IT & Cyber Security',
+            'Certified Red Team Professional (CRTP) [In Progress]',
+            'Offesive Security Certified Professional (OSCP) [In Progress]',
           ].map((cert, i) => (
             <li key={i} className="flex items-center gap-3">
               <Award className="w-5 h-5 text-yellow-500 dark:text-yellow-400 flex-shrink-0" />
