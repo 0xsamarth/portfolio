@@ -101,10 +101,9 @@ const Resume = () => {
         <section className="mb-10">
           <h2 className="text-2xl font-semibold border-b pb-1 border-gray-400">Certifications</h2>
           <ul className="mt-3 text-sm list-disc list-inside">
+            <li>Cybrary: Introduction to IT & Cyber Security</li>
             <li>Certified Ethical Hacker (CEH) – In Progress</li>
             <li>Offensive Security Certified Professional (OSCP) – In Progress</li>
-            <li>eLearnSecurity Junior Penetration Tester (eJPT)</li>
-            <li>Google Cybersecurity Certificate</li>
           </ul>
         </section>
 
